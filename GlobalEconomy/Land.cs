@@ -7,6 +7,8 @@ namespace GlobalEconomy
     class Land
     {
 
+        // Average distance of town to town is 15km-20km, city to city is 55km-70km
+
         public List<Plane>[,] Lands { get; private set; }
 
 
@@ -14,7 +16,7 @@ namespace GlobalEconomy
         {
 
         }
-        public Land(int empires, int startingGold, int startingGoods)
+        public Land(int empires, List<Item> resources)
         {
 
         }
