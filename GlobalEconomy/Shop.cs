@@ -7,6 +7,8 @@ namespace GlobalEconomy
         public int Gold { get; set; }
         // Items, Quantity
         public Dictionary<Item, int> Items { get; set; }
+
+
         
     }
 }

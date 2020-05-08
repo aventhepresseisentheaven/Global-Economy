@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace GlobalEconomy
 {
     class City
     {
+
         public int Gold { get; set; }
         public int ShopCount { get; private set; }
         public List<Shop> Shops { get; set; }
@@ -14,8 +13,8 @@ namespace GlobalEconomy
         public City()
         {
             // Resources of City start at x2
-            // Value of item is kmDistanceToProducer / 25 * BaseValue + BaseValue
-
+            // Value of item is (nearbyLandSupply / 10 * BaseValue) - (rpd * Producers
+            
         }
     }
 }
