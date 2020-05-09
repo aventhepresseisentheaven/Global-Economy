@@ -1,23 +1,20 @@
-﻿namespace GlobalEconomy
+﻿using System.Collections.Generic;
+
+namespace GlobalEconomy
 {
     class Plane
     {
         // "City" "Town" "None"
-        public string Property { get; private set; }
-        public City CityProperty { get; set; }
-        public Town TownProperty { get; set; }
+        public string Property { get; set; }
+        public int Gold { get; set; }
+        public Shop Shop { get; set; }
+        public Dictionary<Producer, int> Producers { get; set; } = new Dictionary<Producer, int>();
 
-        public Plane(City city)
+        public Plane()
         {
-            CityProperty = city;
-            Property = "City";
+            Property = "None";
         }
         
-        public Plane(Town town)
-        {
-            TownProperty = town;
-            Property = "Town";
-        }
 
     }
 }

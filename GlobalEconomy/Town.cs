@@ -2,11 +2,12 @@
 
 namespace GlobalEconomy
 {
-    class Town
+    class Town : Plane
     {
-        public int Gold { get; set; }
-        public int ShopCount { get; private set; }
-        public List<Shop> Shops { get; set; }
-        public Producer Producers { get; set; }
+        
+        public Town()
+        {
+            Property = "Town";
+        }
     }
 }
